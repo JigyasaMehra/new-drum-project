@@ -3,6 +3,7 @@ for (var i = 0; i < numofbuttons; i++) {
  document.querySelectorAll(".drum")[i].addEventListener("click",function () {
  var cl=this.innerHTML;
  soundMake(cl);
+ buttonAnimation(cl);
 });
 }
 document.addEventListener("keypress",function (event) {
