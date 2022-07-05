@@ -1,5 +1,10 @@
 const numofbuttons=document.querySelectorAll(".drum").length;
-
+for (var i = 0; i < numofbuttons; i++) {
+ document.querySelectorAll(".drum")[i].addEventListener("click",function () {
+ var cl=this.innerHTML;
+ soundMake(cl);
+});
+}
 document.addEventListener("keypress",function (event) {
  soundMake(event.key);
  buttonAnimation(event.key);
